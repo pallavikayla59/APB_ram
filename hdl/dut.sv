@@ -1,5 +1,5 @@
-// Code your design here
-Module apb_ram (
+// APB_ram
+Module dut(
   Input presetn,
   Input pclk,
   Input psel,
