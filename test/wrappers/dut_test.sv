@@ -123,3 +123,12 @@ dut ip(.Ipresetn(Ipresetn),
        .pready(pready), 
        .pslverr(pslverr)
 );
+intial begin
+  $dumpfile(dut.vcd);
+  $dumpvars(0,dut_test);
+  pclk=0
+  forever begin
+  #5 pclk=~pclk
+  end
+end
+endmodule
