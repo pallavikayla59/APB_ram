@@ -1,5 +1,5 @@
 // Code your design here
-Module apb_ram (
+Module dut_test(
   Input presetn,
   Input pclk,
   Input psel,
@@ -113,7 +113,7 @@ Module apb_ram (
       
     end
   end
-dut ip(.Ipresetn(Ipresetn),
+dut cc(.Ipresetn(Ipresetn),
        .pclk(pclk),
        .psel(psel),
        .penable(penable),
