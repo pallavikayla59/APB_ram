@@ -1,5 +1,5 @@
 SIM ?= icarus
-TOPLEVEL_LANG ?= verilog
+TOPLEVEL_LANG ?= systemverilog
 VERILOG_SOURCES += $(PWD)/../hdl/dut.sv
 VERILOG_SOURCES += $(PWD)/wrappers/dut_test.sv
 
