@@ -10,8 +10,6 @@ jobs:
       - run: sudo apt install -y --no-install-recommends iverilog
       - run: pip3 install cocotb cocotb_coverage cocotb_bus
       - run: make -C test
-      - name: List Test Directory Contents
-        run: ls -R test
       - uses: actions/upload-artifact@v3
         with:
           name: waveform
